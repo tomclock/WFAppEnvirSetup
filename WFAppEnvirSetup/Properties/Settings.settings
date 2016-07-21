@@ -1,7 +1,32 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WFAppEnvirSetup.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.131.38;Persist Security Info=True;User ID=sa;Password=S3300859!&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.131.38;Persist Security Info=True;User ID=sa;Password=S3300859!</Value>
+    </Setting>
+    <Setting Name="batchPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\WORKBATCH\\BatchLibrary\\Bin\\Conf\\Common.ini</Value>
+    </Setting>
+    <Setting Name="ediPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\WORKEDI\SWSK.EDI\bin\Release\Conf\Common.ini</Value>
+    </Setting>
+    <Setting Name="webPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\WORK\SWSK\SWSK_Frame\SWSK_Frame\WebSite\Conf\DB.xml</Value>
+    </Setting>
+    <Setting Name="batchDBName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ediDBName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webDBName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
 </SettingsFile>
