@@ -5,6 +5,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WFAppEnvirSetup.Properties;
 
 namespace WFAppEnvirSetup
 {
@@ -17,7 +18,12 @@ namespace WFAppEnvirSetup
         {
             dbFactory = dbFactory?? DbProviderFactories.GetFactory("System.Data.SqlClient");
             dbConnect = dbConnect??dbFactory.CreateConnection();
-            dbConnect.ConnectionString = connection;
+            if(Settings.Default.ConnectionString != string.Empty)
+            {
+                dbConnect.ConnectionString = Settings.Default.ConnectionString;
+            }
+            else
+                dbConnect.ConnectionString = connection;
             dbConnect.Open();
         }
 
